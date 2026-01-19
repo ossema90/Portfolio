@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Windows XP</title>
+  </head>
+  <body>
+    <div class="container_windows_xp">
+      <div class="desktop_windows_xp">
+        <!-- Desktop icon that opens a modal -->
+        <div style="position: absolute; top: 50px; left: 50px; color: white; text-shadow: 2px 2px 4px black; text-align: center; cursor: pointer" ondblclick="document.getElementById('about').open()">
+          <img src="assets/help.png" width="48" /><br />
+          About Me.exe
+        </div>
+        <!-- PDF icon that opens a resume -->
+        <div
+          style="position: absolute; top: 150px; left: 50px; color: white; text-shadow: 2px 2px 4px black; text-align: center; cursor: pointer"
+          ondblclick="document.getElementById('resume').open()"
+        >
+          <img src="assets/pdf.png" width="48" /><br />
+          Resume.pdf
+        </div>
+
+        <!-- Projects icon that opens a modal -->
+        <div
+          style="position: absolute; top: 250px; left: 50px; color: white; text-shadow: 2px 2px 4px black; text-align: center; cursor: pointer"
+          ondblclick="document.getElementById('projects').open()"
+        >
+          <img src="assets/folder.png" width="48" /><br />
+          Projects.exe
+        </div>
+        <div
+          style="position: absolute; top: 350px; left: 50px; color: white; text-shadow: 2px 2px 4px black; text-align: center; cursor: pointer"
+          ondblclick="document.getElementById('mail').open()"
+        >
+          <img src="assets/msn.png" width="48" /><br />
+          Send Mail
+        </div>
+
+        <!-- Add this icon to your desktop -->
+<div style="position: absolute; top: 450px; left: 50px; color: white; text-shadow: 2px 2px 4px black; text-align: center; cursor: pointer" ondblclick="document.getElementById('quiz').open()">
+  <img src="assets/mediaplayer.png" width="48" /><br />
+  Quiz.exe
+</div>
+
+        <!-- Modal for Projects -->
+      </div>
+      <!-- Bottom nav bar windows XP -->
+      <div class="buttom_windows_xp_bar">
+        <div class="btn_start_windows_xp">
+          <img src="assets/xp_btn_norm.png" alt="Start" id="startBtn" onclick="document.getElementById('startMenu').open()" />
+        </div>
+
+        <div class="right_buttom_windows_xp_bar">
+          <div class="icon_buttom_windows_xp">
+            <img src="assets/sound.png" alt="Battery" class="icon_windows_xp" />
+          </div>
+
+          <div class="time_windows_xp" id="timeWindowsXP">12:00 PM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal component -->
+
+    <!-- Modal components -->
+    <xp-tab id="about" title="About Me - Properties">
+      <about-content></about-content>
+    </xp-tab>
+
+    <!-- PDF Viewer Component -->
+    <xp-tab id="resume" title="Daoud_Ossema_Resume.pdf - Adobe Reader">
+      <xp-pdf-viewer></xp-pdf-viewer>
+    </xp-tab>
+    <xp-tab id="projects" title="Projects - Properties"><h1>Coming soon</h1></xp-tab>
+    <xp-tab id="mail" title="Send Me Mail">
+
+      <mail-content></mail-content>
+    </xp-tab>
+
+    <xp-tab id="quiz" title="Web Development Quiz - Internet Explorer">
+      <quizz-content></quizz-content>
+  </xp-tab>
+
+    <!-- Start Menu component -->
+    <xp-startmenu id="startMenu"> </xp-startmenu>
+
+    <script type="module" src="content/about.js"></script>
+    <script type="module" src="content/mail.js"></script>
+    <script type="module" src="content/quizz.js"></script>
+    <script type="module" src="components/xp-modal.js"></script>
+    <script type="module" src="components/xp-startmenu.js"></script>
+    <script type="module" src="components/xp-tab.js"></script>
+    <script type="module" src="components/xp-pdf-viewer.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

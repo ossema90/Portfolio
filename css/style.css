@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container_windows_xp {
+  background: url("../assets/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.desktop_windows_xp {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+}
+
+.buttom_windows_xp_bar {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+}
+
+.btn_start_windows_xp {
+  height: 100%;
+  cursor: pointer;
+}
+.right_buttom_windows_xp_bar {
+  margin-left: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #0c59d7 0%, #0d8dea 6%, #12aff4 10%, #14b1f5 14%, #139ef0 94%, #0d68bb 100%);
+  border-left: 1px solid #0d68bb;
+  padding: 2px 8px;
+}
+.time_windows_xp {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 10px;
+  font-size: 11px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.icon_buttom_windows_xp {
+  width: auto;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.icon_windows_xp {
+  width: 16px;
+  height: 16px;
+}
