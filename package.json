@@ -1,16 +1,17 @@
 {
   "name": "projet-ds",
   "version": "1.0.0",
-  "description": "",
+  "description": "Windows XP Portfolio",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build index.html --public-url ./",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ossema Daoud",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
+  "source": "index.html",
   "dependencies": {
     "xp.css": "^0.2.6"
   },
